@@ -26,5 +26,5 @@ def all_posts():
 @app.post('/new_post')
 def new_posts(post: Post):
      print(post)
-     print(post.dict())
+     posts.append(post.dict())
      return {"data": post}
